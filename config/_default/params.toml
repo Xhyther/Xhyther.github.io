@@ -5,15 +5,15 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/configuration/#theme-parameters
 
-colorScheme = "blowfish"
-defaultAppearance = "light" # valid options: light or dark
+colorScheme = "noir"
+defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
 
 enableA11y = false
 enableSearch = true
 enableCodeCopy = false
-enableStructuredBreadcrumbs = false
-# enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
+enableStructuredBreadcrumbs = true
+enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
 
 replyByEmail = false
 
