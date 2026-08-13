@@ -9,16 +9,21 @@ title = "Vhon's Blog"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/logo.png"
+  #logo = "img/blowfish_logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  # description = "My awesome website"
+  description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
    name = "Vhon Michael V. Tabalan"
    email = "vhontabalan@gmail.com"
-   image = "img/blowfish_logo.png"
-   imageQuality = 96
+   image = "img/astronaut.jpg"
+   imageQuality = 100
    headline = "Computer Science Student • Cybersecurity • Software Development"
    bio = "I write about CTFs, cybersecurity, software development, and computer science."
-   links = []
+   links = [
+    { github = "https://github.com/Xhyther" },
+    { linkedin = "https://www.linkedin.com/in/vmvt1011/" },
+    { instagram = "https://www.instagram.com/kaisensho/" },
+    { email = "mailto:vhontabalan@gmail.com" },
+   ]
