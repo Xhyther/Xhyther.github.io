@@ -14,14 +14,14 @@ title = "Blowfish"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
-# [params.author]
-#   name = "Your name here"
-#   email = "youremail@example.com"
-#   image = "img/blowfish_logo.png"
-#   imageQuality = 96
-#   headline = "I'm only human"
-#   bio = "A little bit about you"
-#   links = [
+[params.author]
+   name = "Vhon Michael V. Tabalan"
+   email = "vhontabalan@gmail.com"
+   image = "img/blowfish_logo.png"
+   imageQuality = 96
+   headline = "Computer Science Student • Cybersecurity • Software Development"
+   bio = "I write about CTFs, cybersecurity, software development, and computer science."
+   links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
