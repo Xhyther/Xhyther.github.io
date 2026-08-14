@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Vhon&#39;s Vlog</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Vhon&#39;s Vlog</description>
+    <title>Author on </title>
+    <link>http://localhost:1313/categories/author/</link>
+    <description>Recent content in Author on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>vhontabalan@gmail.com (Vhon Michael V. Tabalan)</managingEditor>
     <webMaster>vhontabalan@gmail.com (Vhon Michael V. Tabalan)</webMaster>
     <copyright>© 2026 Vhon Michael V. Tabalan</copyright>
-    <lastBuildDate>Thu, 13 Aug 2026 22:52:37 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/author/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Thu, 13 Aug 2026 22:52:37 +0800</pubDate>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>vhontabalan@gmail.com (Vhon Michael V. Tabalan)</author>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description></description>
       
     </item>
