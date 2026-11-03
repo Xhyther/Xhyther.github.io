@@ -1,0 +1,90 @@
+.scene-experience { min-width: 0; color: var(--text); }
+.secure-core { margin-bottom: 23px; }
+.scene-heading { display: flex; flex-wrap: wrap; gap: 7px 10px; justify-content: space-between; align-items: center; }
+.scene-heading > .mono { font-size: 7px; color: var(--faint); letter-spacing: .08em; }
+.scene-state { font: 7px/1.7 'IBM Plex Mono', monospace; color: var(--mint); text-align: right; }
+.scene-surface { position: relative; width: 100%; overflow: hidden; border-radius: 4px; background-image: radial-gradient(color-mix(in srgb, var(--mint) 7%, transparent), transparent 65%); touch-action: pan-y; }
+.core-surface { height: 268px; margin-top: 4px; }
+.scene-canvas-host, .scene-fallback { position: absolute; inset: 0; width: 100%; height: 100%; }
+.scene-canvas-host { cursor: grab; }
+.scene-canvas-host.is-dragging { cursor: grabbing !important; }
+.scene-canvas-host canvas { display: block; width: 100%; height: 100%; touch-action: pan-y; opacity: 0; }
+.scene-ready .scene-canvas-host canvas { opacity: 1; }
+.scene-ready .scene-fallback { visibility: hidden; }
+.scene-surface:focus-visible { outline-offset: -4px; }
+.scene-instructions { color: var(--muted); font-size: 9px; line-height: 1.8; margin-top: 4px; }
+.core-layer-key { display: flex; justify-content: space-between; gap: 10px; padding: 11px 0 10px; border-bottom: 1px solid var(--border); font: 7px 'IBM Plex Mono', monospace; color: var(--mint); }
+.scene-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; }
+.scene-controls button, .scene-retry { border: 1px solid var(--border); border-radius: 3px; padding: 7px 9px; min-height: 32px; font: 8px 'IBM Plex Mono', monospace; color: var(--muted); transition: color .2s, border-color .2s, background .2s; }
+.scene-controls button:hover, .scene-controls button[aria-pressed='true'], .scene-retry:hover { color: var(--accent); border-color: color-mix(in srgb, var(--mint) 45%, var(--border)); background: var(--surface); }
+.scene-assist { color: var(--faint); font: 7px/1.9 'IBM Plex Mono', monospace; margin-top: 9px; min-height: 14px; }
+.scene-retry { margin-top: 9px; color: var(--mint); }
+.skill-constellation { border: 1px solid var(--border); background: var(--bg); border-radius: 5px; padding: 28px; margin-bottom: 30px; }
+.constellation-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.constellation-heading .eyebrow { font-size: 7px; color: var(--mint); margin-bottom: 10px; }
+.constellation-heading h3 { font-size: 25px; letter-spacing: -.9px; }
+.constellation-intro { font-size: 11px; line-height: 1.9; color: var(--muted); margin-top: 12px; max-width: 600px; }
+.constellation-layout { display: grid; grid-template-columns: 1.3fr 1fr; gap: 26px; margin-top: 24px; }
+.constellation-visual { min-width: 0; align-self: start; position: sticky; top: 110px; }
+.network-surface { height: 330px; border: 1px solid var(--border); background-color: var(--surface); }
+.network-tooltip { position: absolute; pointer-events: none; top: 15px; left: 15px; right: 15px; z-index: 1; min-height: 38px; }
+.network-tooltip .mono { color: var(--mint); font-size: 8px; }
+.network-tooltip strong { display: block; font: 400 10px/1.8 'IBM Plex Mono', monospace; color: var(--text); margin-top: 5px; max-width: 390px; }
+.cluster-list { display: grid; gap: 10px; min-width: 0; }
+.cluster-list-item { border: 1px solid var(--border); padding: 0 15px 14px; border-radius: 4px; }
+.cluster-list-item.selected { background: var(--surface); border-color: color-mix(in srgb, var(--mint) 42%, var(--border)); }
+.cluster-list-item > button { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 13px 0 10px; font: 500 15px 'Space Grotesk', sans-serif; text-align: left; }
+.cluster-list-item > button > span:last-child { color: var(--muted); font-size: 16px; }
+.cluster-list-item > button:hover, .cluster-list-item > button[aria-pressed='true'] { color: var(--mint); }
+.cluster-list-item > ul, .cluster-detail-tags { display: flex; flex-wrap: wrap; gap: 5px 10px; }
+.cluster-list-item li { font: 8px/1.9 'IBM Plex Mono', monospace; color: var(--muted); transition: color .15s; }
+.cluster-list-item li.skill-highlight { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.cluster-details { border-top: 1px solid var(--border); margin-top: 24px; padding-top: 22px; }
+.cluster-details > .eyebrow { font-size: 7px; color: var(--mint); }
+.cluster-details h4 { font: 500 20px 'Space Grotesk', sans-serif; letter-spacing: -.6px; margin-top: 11px; }
+.cluster-details > p:not(.eyebrow) { color: var(--muted); font-size: 12px; line-height: 1.85; margin-top: 10px; max-width: 770px; }
+.cluster-detail-tags { margin-top: 15px; gap: 6px; }
+.cluster-detail-tags li { font: 8px/1.8 'IBM Plex Mono', monospace; padding: 4px 8px; color: var(--muted); border: 1px solid var(--border); border-radius: 3px; }
+@media (max-width: 1100px) {
+  .core-surface { height: 240px; }
+  .scene-heading > .mono, .scene-state { font-size: 6px; }
+  .scene-controls { gap: 5px; }
+  .scene-controls button { padding-inline: 7px; font-size: 7px; }
+  .skill-constellation { padding: 23px; }
+  .constellation-layout { gap: 20px; grid-template-columns: 1.1fr 1fr; }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .core-surface { height: 220px; }
+  .core-layer-key { font-size: 5px; gap: 5px; }
+  .scene-heading { display: block; }
+  .scene-heading .scene-state { display: block; text-align: left; margin-top: 5px; }
+  .scene-instructions { font-size: 8px; }
+  .scene-assist { font-size: 6px; }
+  .constellation-layout { grid-template-columns: 1fr 1fr; gap: 18px; }
+  .network-surface { height: 310px; }
+  .network-tooltip strong { font-size: 8px; }
+}
+@media (max-width: 600px) {
+  .secure-core { margin-bottom: 23px; }
+  .core-surface { height: 265px; }
+  .scene-heading > .mono, .scene-state { font-size: 6px; }
+  .scene-controls button { min-height: 36px; font-size: 8px; padding-inline: 10px; }
+  .scene-instructions { font-size: 9px; }
+  .core-layer-key { font-size: 7px; }
+  .scene-assist { font-size: 7px; }
+  .skill-constellation { padding: 20px 15px; }
+  .constellation-heading { gap: 12px; align-items: flex-start; }
+  .constellation-heading h3 { font-size: 23px; }
+  .constellation-heading .scene-state { max-width: 95px; }
+  .constellation-layout { display: block; margin-top: 21px; }
+  .constellation-visual { position: static; }
+  .network-surface { height: 285px; }
+  .network-tooltip strong { font-size: 9px; }
+  .cluster-list { margin-top: 20px; gap: 9px; }
+  .cluster-list-item li { font-size: 9px; }
+  .cluster-list-item > button { font-size: 16px; padding-block: 15px 12px; }
+  .cluster-details > p:not(.eyebrow) { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene-experience *, .scene-experience *::before, .scene-experience *::after { transition: none !important; }
+}

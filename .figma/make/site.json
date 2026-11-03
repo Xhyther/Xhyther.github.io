@@ -1,0 +1,11 @@
+{
+  "description": "Explore Vhon Michael Tabalan’s software projects, technical expertise, education, and security interests in a polished portfolio for engineering and cybersecurity recruiters.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  },
+  "title": "Vhon / Xhyther — Developer & Security-minded Builder"
+}
